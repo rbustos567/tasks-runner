@@ -18,3 +18,17 @@ A lightweight Python runner designed to execute an ordered list of shell command
 ├── jobs.example.json
 └── README.md
 ```
+
+## Usage
+
+### Run manually
+```bash
+python3 /usr/local/bin/tasks_runner.py \
+  --tasks-list /path/to/jobs.json \
+  --log-file /path/to/logs/daily_runner_2026-11-21.log
+```bash
+
+### Run from crontab
+```bash
+30 8 * * * /bin/sh -c '/usr/bin/python3 /usr/local/bin/tasks_runner.py --tasks-list /home/user/config/jobs.json --log-file "/home/user/logs/tasks_runner_$(date +\%Y-\%m-\%d).log"'
+```
