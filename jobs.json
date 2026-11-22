@@ -1,0 +1,27 @@
+{
+  "jobs": [
+    {
+      "index": 1,
+      "name": "Task without timeout key",
+      "command": "/usr/local/bin/job_one.sh"
+    },
+    {
+      "index": 2,
+      "name": "Task with null timeout",
+      "command": "/usr/local/bin/job_two.sh",
+      "timeout": null
+    },
+    {
+      "index": 3,
+      "name": "Task with empty timeout",
+      "command": "/usr/local/bin/job_three.sh",
+      "timeout": ""
+    },
+    {
+      "index": 4,
+      "name": "Task with 60s timeout",
+      "command": "/usr/local/bin/job_four.sh",
+      "timeout": 60
+    }
+  ]
+}
