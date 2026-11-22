@@ -55,6 +55,7 @@ def run_with_timeout(command: str, timeout: Optional[int]) -> int:
     proc = subprocess.Popen(
         command,
         shell=True,
+        executable="/bin/bash",
         start_new_session=True,
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
