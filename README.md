@@ -26,7 +26,7 @@ A lightweight Python runner designed to execute an ordered list of shell command
 python3 /usr/local/bin/tasks_runner.py \
   --tasks-list /path/to/jobs.json \
   --log-file /path/to/logs/daily_runner_2026-11-21.log
-```bash
+```
 
 ### Run from crontab
 ```bash
